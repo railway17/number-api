@@ -2,7 +2,7 @@
 FROM node as build
 WORKDIR /app
 COPY . .
-RUN npm
+RUN npm install
 RUN npm run build
 # production environment
 
