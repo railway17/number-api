@@ -18,8 +18,8 @@ app.use('/check', checkRouter);
 
 console.log(nodeEnv)
 
-// const connectionUri = `mongodb://${nodeEnv.DB_HOST}:${nodeEnv.DB_PORT}`;
-const connectionUri = `mongodb://localhost:${nodeEnv.DB_PORT}`;
+const connectionUri = `mongodb://${nodeEnv.DB_HOST}:${nodeEnv.DB_PORT}`;
+// const connectionUri = `mongodb://localhost:${nodeEnv.DB_PORT}`;
 mongoose.connect(connectionUri, {
     user: nodeEnv.DB_USER,
     pass: nodeEnv.DB_PASS,
